@@ -1,0 +1,28 @@
+@import '../mixins';
+@import '../variables';
+
+main {
+  width: 100vw;
+  position: absolute;
+  top: 100vh;
+  display: block;
+}
+
+.grow_section {
+  position: relative;
+  padding: 4rem 20rem;
+
+  h2 {
+    color: $dark;
+  }
+}
+
+.card_group {
+  width: 25rem;
+}
+
+.grow_section .card_group_2 {
+  position: absolute;
+  top: 4rem;
+  right: 15rem;
+}

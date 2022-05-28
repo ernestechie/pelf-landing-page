@@ -1,0 +1,37 @@
+@import '../variables';
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+
+  &_primary_fill {
+    color: $white;
+    background: $primary;
+  }
+
+  &_primary_light {
+    color: $primary;
+    background: $white;
+  }
+
+  &_primary_transparent {
+    color: $primary;
+    background: transparent;
+  }
+
+  &_green_light {
+    color: $green;
+    background: $white;
+  }
+
+  &_yellow_light {
+    color: $yellow;
+    background: $white;
+  }
+
+  &_secondary_light {
+    color: $secondary;
+    background: $white;
+  }
+}

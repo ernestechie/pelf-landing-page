@@ -1,0 +1,13 @@
+@import '../mixins';
+@import '../variables';
+
+.featured {
+  width: 100vw;
+  text-align: center;
+  padding: 3rem 5rem;
+}
+
+.featured_companies {
+  @include display-flex(100%, auto, row, center, center, 4rem);
+  margin-top: 2rem;
+}

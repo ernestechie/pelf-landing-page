@@ -1,0 +1,35 @@
+@import '../mixins';
+@import '../variables';
+
+.testimonials {
+  @include display-grid-columns(100vw, auto, (30%, 70%), center, center, 2rem);
+  padding: 3rem 6rem;
+  background: url('/dist/images/png/geo-pattern.png');
+
+  &_header {
+    text-align: center;
+    * {
+      margin-block: 0.5rem;
+    }
+  }
+
+  &_main {
+    @include display-grid-columns(
+      100%,
+      100%,
+      repeat(2, 50%),
+      center,
+      center,
+      1rem
+    );
+
+    &_content {
+      padding-right: 3rem;
+
+      p {
+        line-height: 1.8;
+        margin-block: 1rem;
+      }
+    }
+  }
+}

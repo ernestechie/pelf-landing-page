@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../mixins';
+
+@media (max-width: $laptop) {
+  header {
+    .nav {
+      padding: 2rem 3rem;
+
+      &_links {
+        @include display-flex(40%, 100%, row, space-between, center, 0);
+      }
+    }
+
+    .hero {
+      padding: 6rem 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-gap: 5rem;
+
+      &_content {
+        h1 {
+          font-size: 3.5rem;
+          padding-right: 3rem;
+        }
+        p {
+          padding: 0;
+          padding-right: 10vw;
+          font-size: 1.2rem;
+        }
+      }
+
+      &_image {
+        @include position(absolute, 8rem, -25vw, _, _);
+      }
+    }
+  }
+
+  // ? main section
+  main {
+    padding: 2rem 6rem;
+  }
+
+  .grow_section {
+    padding: 3rem 6rem;
+  }
+
+  .grow_section .card_group_2 {
+    position: absolute;
+    top: 4rem;
+    right: 6rem;
+  }
+}

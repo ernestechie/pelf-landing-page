@@ -1,0 +1,70 @@
+@import '../variables';
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  transition: 0.4s ease-in;
+
+  &_primary_fill {
+    color: $white;
+    background: $primary;
+
+    &:hover {
+      background: $primary-dark;
+      transition: 0.6s ease-out;
+    }
+  }
+
+  &_primary_light {
+    color: $primary;
+    background: $white;
+
+    &:hover {
+      background: $pale-purple;
+      color: $primary-dark;
+      transition: 0.6s ease-out;
+    }
+  }
+
+  &_primary_transparent {
+    color: $primary;
+    background: transparent;
+
+    &:hover {
+      color: $primary-dark;
+      transition: 0.6s ease-out;
+    }
+  }
+
+  &_green_light {
+    color: $green;
+    background: $white;
+
+    &:hover {
+      background: $pale-purple;
+      transition: 0.6s ease-out;
+    }
+  }
+
+  &_yellow_light {
+    color: $yellow;
+    background: $white;
+
+    &:hover {
+      background: $pale-purple;
+      transition: 0.6s ease-out;
+    }
+  }
+
+  &_secondary_light {
+    color: $secondary;
+    background: $white;
+
+    &:hover {
+      background: $pale-purple;
+      color: $primary-dark;
+      transition: 0.6s ease-out;
+    }
+  }
+}

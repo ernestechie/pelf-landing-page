@@ -1,0 +1,15 @@
+{
+  "name": "w-portfolio-landing-page",
+  "version": "1.0.0",
+  "description": "w-portfolio-landing-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss",
+    "scss": "node-sass --watch scss -o dist/css"
+  },
+  "author": "Isaiah Ernest Ovie",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

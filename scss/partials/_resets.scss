@@ -1,0 +1,53 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $pale-dark;
+  border-radius: 2rem;
+  height: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  background: $pale-purple;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  z-index: 1;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: $very-dark;
+}

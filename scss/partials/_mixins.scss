@@ -1,0 +1,27 @@
+@mixin display-flex($width, $height, $direction, $justify, $align, $gap) {
+  display: flex;
+  width: $width;
+  height: $height;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin display-grid-columns($width, $height, $params, $justify, $align, $gap) {
+  display: grid;
+  width: $width;
+  height: $height;
+  grid-template-columns: $params;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

@@ -1,0 +1,60 @@
+@import '../mixins';
+@import '../variables';
+
+footer {
+  @include display-grid-columns(100vw, auto, 100%, space-between, end, 0);
+}
+
+.footer_main {
+  background: url('/dist/images/png/building-1.png') no-repeat bottom
+    center/contain;
+  padding: 4rem 6rem 2rem 6rem;
+
+  &_head {
+    @include display-flex(100%, auto, row, space-between, center, 0);
+    border-bottom: 2px solid $primary-dark;
+    padding-bottom: 2rem;
+
+    &_links {
+      @include display-flex(10%, 100%, column, space-around, center, 1rem);
+
+      a ion-icon {
+        color: $primary-dark;
+        font-size: 1.5rem;
+        transition: 0.5s ease-in;
+
+        &:hover {
+          color: $very-dark;
+          transition: 0.5s ease-out;
+        }
+      }
+    }
+
+    p.text_xlg {
+      color: $primary-dark;
+    }
+  }
+
+  &_body {
+    padding-top: 3rem;
+    @include display-grid-columns(
+      100vw,
+      auto,
+      repeat(3, 33%),
+      space-between,
+      start,
+      0
+    );
+
+    .contact_container a {
+      display: block;
+      margin-block: 1rem;
+    }
+  }
+}
+
+.footer_copyright {
+  text-align: center;
+  padding: 1rem;
+  color: $white;
+}

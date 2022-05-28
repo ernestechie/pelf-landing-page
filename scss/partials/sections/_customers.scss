@@ -1,0 +1,22 @@
+@import '../mixins';
+@import '../variables';
+
+.customers {
+  @include display-flex(100vw, 100vh, row, space-between, center, 2rem);
+  background: url('/dist/images/png/map.png') no-repeat center center/cover;
+  padding: 4rem 6rem;
+
+  &_content {
+    p {
+      margin-block: 1rem;
+    }
+  }
+
+  &_image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

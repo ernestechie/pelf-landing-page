@@ -1,0 +1,78 @@
+@import '../variables';
+
+.bg_light {
+  background: $white;
+}
+
+.bg_primary {
+  background: $primary;
+}
+
+.bg_yellow {
+  background: $yellow;
+}
+
+.bg_green {
+  background: $green;
+}
+
+.bg_secondary {
+  background: $secondary;
+}
+
+.pelf_card {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  height: 28rem;
+  width: 23rem;
+  margin-block: 2rem;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+
+  p.text_md {
+    margin-block: 0.5rem;
+    color: $white;
+  }
+
+  p.lead_text,
+  p.text_md {
+    padding-right: 2rem;
+    color: $white;
+  }
+
+  img.billy_image {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 70%;
+  }
+
+  img.pattern {
+    mix-blend-mode: soft-light;
+    filter: brightness(75%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+
+.pelf_card.bg_yellow .billy_image {
+  bottom: -2rem;
+  right: 0;
+}
+
+.pelf_card.bg_green .billy_image {
+  bottom: -2rem;
+  right: -1rem;
+}
+
+.pelf_card.bg_secondary .billy_image {
+  right: -3rem;
+}
